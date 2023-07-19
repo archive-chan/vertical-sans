@@ -15,5 +15,5 @@ Vertical Sans 是一款像素风格英文字体。字体设计基本使用了`�
 本字体的发布遵守 [SIL Open Font License v1.1](https://scripts.sil.org/OFL)
 
 # 最后
-我并非专业的字体设计师，如有错误请及时指出，万分感谢！
-你可以在 [B站](https://space.bilibili.com/426356416) 找到我。
+- 本人并非专业的字体设计师，如有错误请及时指出，万分感谢！
+- 你可以在 [B站](https://space.bilibili.com/426356416) 找到我。
