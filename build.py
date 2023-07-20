@@ -35,9 +35,9 @@ def _collect_glyph_files():
 
 def _create_builder(character_mapping: dict[int, str], glyph_file_paths: dict[str, str]) -> FontBuilder:
     builder = FontBuilder(
-        size=9,
-        ascent=11,
-        descent=-2,
+        size=10,
+        ascent=10,
+        descent=0,
         x_height=7,
         cap_height=9,
     )
@@ -72,17 +72,21 @@ def _create_builder(character_mapping: dict[int, str], glyph_file_paths: dict[st
 def _make_font_files():
     character_mapping, glyph_file_paths = _collect_glyph_files()
     builder = _create_builder(character_mapping, glyph_file_paths)
+
     otf_builder = builder.to_otf_builder()
     otf_file_path = os.path.join(outputs_dir, 'VerticalSans.otf')
     otf_builder.save(otf_file_path)
     logger.info("Make font file: '%s'", otf_file_path)
+
     otf_builder.font.flavor = 'woff2'
     woff2_file_path = os.path.join(outputs_dir, 'VerticalSans.woff2')
     otf_builder.save(woff2_file_path)
     logger.info("Make font file: '%s'", woff2_file_path)
+
     ttf_file_path = os.path.join(outputs_dir, 'VerticalSans.ttf')
     builder.save_ttf(ttf_file_path)
     logger.info("Make font file: '%s'", ttf_file_path)
+
     bdf_file_path = os.path.join(outputs_dir, 'VerticalSans.bdf')
     builder.save_bdf(bdf_file_path)
     logger.info("Make font file: '%s'", bdf_file_path)
