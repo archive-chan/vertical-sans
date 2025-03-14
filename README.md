@@ -12,7 +12,7 @@ Vertical Sans 是一款像素风格英文字体。字体设计基本使用了`�
 - 压缩包中包含 `.ttf` 和 `.otf` 点击安装即可。
 
 # 许可证
-本字体的发布遵守 [SIL Open Font License v1.1](https://scripts.sil.org/OFL)
+本字体的发布遵守 [SIL Open Font License v1.1](https://openfontlicense.org)
 
 # 最后
 - 本人并非专业的字体设计师，如有错误请及时指出，万分感谢！
